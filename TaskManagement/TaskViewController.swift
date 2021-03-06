@@ -40,19 +40,11 @@ extension TaskViewController: UITableViewDelegate, UITableViewDataSource {
     //セルを作成
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = taskTableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! TaskTableViewCell
-        //cell.setup(task: tasks[indexPath.row], indexPath: cell.indexPath)
         cell.taskLabel.text = tasks[indexPath.row]["taskTitle"] as? String ?? ""
         cell.deadlineLabel.text = tasks[indexPath.row]["deadLine"] as? String ?? ""
-        
         cell.indexPath = indexPath
-        let favoriteStatus = tasks[indexPath.row]["isFavorite"] as! Bool
-        if favoriteStatus == false {
-            let displayStatus = UIImage(systemName: "suit.heart")
-            cell.favoriteButton.setImage(displayStatus, for: .normal)
-        } else {
-            let displayStatus = UIImage(systemName: "suit.heart.fill")
-            cell.favoriteButton.setImage(displayStatus, for: .normal)
-        }
+        cell.setup(task: tasks[indexPath.row], indexPath: cell.indexPath)
+        
         return cell
     }
     

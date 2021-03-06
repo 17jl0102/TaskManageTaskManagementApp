@@ -16,6 +16,17 @@ class TaskTableViewCell: UITableViewCell {
     
     @IBOutlet weak var favoriteButton: UIButton!
     
+    func setup(task: [String: Any], indexPath: IndexPath) {
+        let favoriteStatus = tasks[indexPath.row]["isFavorite"] as! Bool
+        if favoriteStatus == false {
+            let displayStatus = UIImage(systemName: "suit.heart")
+            favoriteButton.setImage(displayStatus, for: .normal)
+        } else {
+            let displayStatus = UIImage(systemName: "suit.heart.fill")
+            favoriteButton.setImage(displayStatus, for: .normal)
+        }
+    }
+    
     @IBAction func favoriteSelectDidTap(_ sender: UIButton) {
         var task = tasks[indexPath.row]
         var favoriteStatus = task["isFavorite"] as! Bool
@@ -31,7 +42,4 @@ class TaskTableViewCell: UITableViewCell {
             favoriteButton.setImage(displayStatus, for: .normal)
         }
     }
-    
-    //func setup(task: [String: Any], indexPath: IndexPath) {
-    //}
 }
