@@ -21,7 +21,7 @@ class TaskTableViewCell: UITableViewCell {
         var favoriteStatus = task["isFavorite"] as! Bool
         favoriteStatus.toggle()
         task["isFavorite"] = favoriteStatus
-        tasks.append(task)
+        tasks[indexPath.row] = task
         UserDefaults.standard.set(tasks, forKey: "TasksKey")
         if favoriteStatus == false {
             let displayStatus = UIImage(systemName: "suit.heart")

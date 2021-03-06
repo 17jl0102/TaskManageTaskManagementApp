@@ -43,7 +43,7 @@
                                                     <rect key="frame" x="342.33333333333331" y="14.666666666666664" width="35.666666666666686" height="29"/>
                                                     <state key="normal" image="heart" catalog="system"/>
                                                     <connections>
-                                                        <action selector="favoriteSeclectDidTap:" destination="iAT-XO-HtH" eventType="touchUpInside" id="Rts-aP-JLb"/>
+                                                        <action selector="favoriteSelectDidTap:" destination="iAT-XO-HtH" eventType="touchUpInside" id="XPP-tg-fuG"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="de0-Rm-F9a">
@@ -220,31 +220,15 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vho-dJ-k05">
-                                                    <rect key="frame" x="342.33333333333331" y="14.666666666666664" width="35.666666666666686" height="29"/>
-                                                    <state key="normal" image="heart" catalog="system"/>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJE-kn-m1V">
-                                                    <rect key="frame" x="281.66666666666669" y="14.666666666666664" width="35.666666666666686" height="29"/>
-                                                    <state key="normal" image="pencil" catalog="system"/>
-                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="vho-dJ-k05" firstAttribute="height" secondItem="JDu-dJ-K8b" secondAttribute="height" multiplier="1:2" id="0Lb-Uz-hSb"/>
-                                                <constraint firstItem="vho-dJ-k05" firstAttribute="centerY" secondItem="JDu-dJ-K8b" secondAttribute="centerY" id="0tU-hf-QnF"/>
                                                 <constraint firstAttribute="trailing" secondItem="Nsg-4n-gv7" secondAttribute="trailing" multiplier="5:2" constant="20" symbolic="YES" id="1eQ-4e-tdu"/>
                                                 <constraint firstItem="1j1-Ad-o5d" firstAttribute="height" secondItem="JDu-dJ-K8b" secondAttribute="height" multiplier="1:2" id="4vU-3l-4Gg"/>
-                                                <constraint firstItem="dJE-kn-m1V" firstAttribute="height" secondItem="vho-dJ-k05" secondAttribute="height" multiplier="1:1" id="IYg-Lu-eWt"/>
                                                 <constraint firstItem="Nsg-4n-gv7" firstAttribute="leading" secondItem="1j1-Ad-o5d" secondAttribute="leading" id="K0q-64-J28"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="vho-dJ-k05" secondAttribute="trailing" constant="30" id="N6O-7O-Ny0"/>
                                                 <constraint firstItem="1j1-Ad-o5d" firstAttribute="trailing" secondItem="Nsg-4n-gv7" secondAttribute="trailing" id="U9K-nE-293"/>
-                                                <constraint firstItem="dJE-kn-m1V" firstAttribute="width" secondItem="vho-dJ-k05" secondAttribute="width" multiplier="1:1" id="fy6-je-Cbt"/>
                                                 <constraint firstItem="1j1-Ad-o5d" firstAttribute="leading" secondItem="JDu-dJ-K8b" secondAttribute="leading" constant="20" id="gwa-Kg-D1U"/>
                                                 <constraint firstItem="Nsg-4n-gv7" firstAttribute="height" secondItem="1j1-Ad-o5d" secondAttribute="height" multiplier="2:3" id="hps-Dp-NfE"/>
                                                 <constraint firstItem="1j1-Ad-o5d" firstAttribute="top" secondItem="JDu-dJ-K8b" secondAttribute="top" id="jsJ-oD-buR"/>
-                                                <constraint firstItem="dJE-kn-m1V" firstAttribute="centerY" secondItem="JDu-dJ-K8b" secondAttribute="centerY" id="m8Z-wI-yYC"/>
-                                                <constraint firstItem="vho-dJ-k05" firstAttribute="leading" secondItem="dJE-kn-m1V" secondAttribute="trailing" constant="25" id="mqd-OU-MlP"/>
-                                                <constraint firstItem="vho-dJ-k05" firstAttribute="width" secondItem="JDu-dJ-K8b" secondAttribute="width" multiplier="1:12" id="nhP-oj-ajc"/>
                                                 <constraint firstItem="Nsg-4n-gv7" firstAttribute="top" secondItem="1j1-Ad-o5d" secondAttribute="bottom" id="x10-Kh-6hK"/>
                                             </constraints>
                                         </tableViewCellContentView>

@@ -50,14 +50,14 @@ extension TaskViewController: UITableViewDelegate, UITableViewDataSource {
             let displayStatus = UIImage(systemName: "suit.heart")
             cell.favoriteButton.setImage(displayStatus, for: .normal)
         } else {
-            let displayStatus = UIImage(systemName: "suit.hear.fill")
+            let displayStatus = UIImage(systemName: "suit.heart.fill")
             cell.favoriteButton.setImage(displayStatus, for: .normal)
         }
         return cell
     }
     
     //セルを削除
-   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete {
             tasks.remove(at: indexPath.row)
             UserDefaults.standard.set(tasks,forKey: "TasksKey")
