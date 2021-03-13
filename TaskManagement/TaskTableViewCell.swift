@@ -12,11 +12,15 @@ class TaskTableViewCell: UITableViewCell {
     @IBOutlet weak var taskLabel: UILabel!
     
     @IBOutlet weak var deadlineLabel: UILabel!
-    var indexPath = IndexPath()
     
     @IBOutlet weak var favoriteButton: UIButton!
     
+    var indexPath = IndexPath()
+    
     func setup(task: [String: Any], indexPath: IndexPath) {
+        taskLabel.text = tasks[indexPath.row]["taskTitle"] as? String ?? ""
+        deadlineLabel.text = tasks[indexPath.row]["deadLine"] as? String ?? ""
+        
         let favoriteStatus = tasks[indexPath.row]["isFavorite"] as! Bool
         if favoriteStatus == false {
             let displayStatus = UIImage(systemName: "suit.heart")

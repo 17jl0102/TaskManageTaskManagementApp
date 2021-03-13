@@ -27,12 +27,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="428" height="58"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVi-hH-sVg">
-                                                    <rect key="frame" x="20" y="0.0" width="143.33333333333334" height="29"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVX-Vg-CVj">
                                                     <rect key="frame" x="20" y="29" width="143.33333333333334" height="19.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -50,6 +44,12 @@
                                                     <rect key="frame" x="281.66666666666669" y="14.666666666666664" width="35.666666666666686" height="29"/>
                                                     <state key="normal" image="pencil" catalog="system"/>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVi-hH-sVg">
+                                                    <rect key="frame" x="20" y="0.0" width="143.33333333333334" height="29"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="rVX-Vg-CVj" firstAttribute="height" secondItem="uVi-hH-sVg" secondAttribute="height" multiplier="2:3" id="DRk-wX-CjX"/>
@@ -171,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="2078" y="-161"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="zOj-Uh-cMo">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarViewController" id="E65-ao-ELg" customClass="TabBarViewController" customModule="TaskManagement" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="E65-ao-ELg" customClass="TabBarController" customModule="TaskManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aHk-A6-b0m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

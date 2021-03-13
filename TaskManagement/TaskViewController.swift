@@ -40,8 +40,6 @@ extension TaskViewController: UITableViewDelegate, UITableViewDataSource {
     //セルを作成
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = taskTableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! TaskTableViewCell
-        cell.taskLabel.text = tasks[indexPath.row]["taskTitle"] as? String ?? ""
-        cell.deadlineLabel.text = tasks[indexPath.row]["deadLine"] as? String ?? ""
         cell.indexPath = indexPath
         cell.setup(task: tasks[indexPath.row], indexPath: cell.indexPath)
         
